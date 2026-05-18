@@ -7,7 +7,7 @@
 
 📍 Based in Taipei, Taiwan | 🌍 Open to Global Remote
 
-⚡ **Availability: Open for Freelance Short-Term Contract / Emergency SRE Support / Technical Auditing**
+⚡ **Availability: Open for Freelance Short-Term Contract / Emergency SRE Support / Technical Auditing / Web3 & AI Flow Integration**
 
 ---
 
