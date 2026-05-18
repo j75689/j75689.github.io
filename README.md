@@ -1,10 +1,13 @@
 # [Dylan Huang] 🚀
-**Senior Blockchain Core Developer | Golang & Distributed Systems Expert**
+**Senior Backend & Distributed Systems Engineer | Ex-BNB Chain Core Developer**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/02470b111)
 [![GitHub](https://img.shields.io/badge/GitHub-Portfolio-lightgrey?style=flat-square&logo=github)](https://github.com/j75689)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat-square&logo=gmail)](mailto:j75689@gmail.com)
+
 📍 Based in Taipei, Taiwan | 🌍 Open to Global Remote
+
+⚡ **Availability: Open for Freelance Short-Term Contract / Emergency SRE Support / Technical Auditing**
 
 ---
 
