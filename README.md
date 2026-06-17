@@ -25,7 +25,7 @@ As a **Core Contributor to BNB Chain**, I have spearheaded critical protocol upg
 | **Languages** | **Golang (Expert)**, **Rust**, JavaScript, SQL, Shell |
 | **Blockchain** | **BNB Smart Chain (BSC)**, **EVM**, **Cosmos-SDK**, CometBFT, Reth/Geth |
 | **Backend** | Microservices, gRPC, GraphQL, Saga Pattern, Kafka, RabbitMQ |
-| **Infrastructure** | **Kubernetes**, Terraform, Docker, AWS, GKE, CI/CD, Ansible |
+| **Infrastructure** | **Kubernetes**, Terraform, Docker, AWS, GKE, CI/CD |
 | **Observability** | Prometheus, Grafana, EFK Stack|
 
 ---
