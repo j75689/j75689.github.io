@@ -11,7 +11,7 @@
 ---
 
 ## 👨‍💻 Profile Summary
-Over 8 years of software engineering experience specializing in Blockchain Core Protocols and High-Performance Distributed Systems. As a Core Contributor to BNB Chain, spearheaded critical consensus upgrades (Hardforks) and multi-client development in Go (Geth) and Rust (Reth). Currently active as an independent Technical Consultant, focusing on the convergence of Web3 infrastructure, high-throughput backend services, and cloud-native MLOps architecture.
+Over 8 years of software engineering experience specializing in Blockchain Core Protocols and High-Performance Distributed Systems. As a Core Contributor to BNB Chain, spearheaded critical consensus upgrades (Hardforks) and multi-client development in Go (Geth) and Rust (Reth). Currently active as an independent Technical Consultant, focusing on Web3 infrastructure optimization, cross-chain interoperability, and high-throughput backend architecture.
 
 ---
 
