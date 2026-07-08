@@ -36,7 +36,7 @@ Over 8 years of software engineering experience specializing in Blockchain Core 
 
 * **Core Protocol & Hardforks:**
   1. **[BEP-131](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP131.md):** Implemented candidate validator mechanisms to enhance network decentralization.
-  2. **[BEP-299](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-299.md):** Engineered the token migration process for the **BC Fusion** (Beacon Chain & BSC merger). Ensured secure asset bridging and zero-downtime data migration during the network merger.
+  2. **[BEP-299](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-299.md) and [BEP-333](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP333.md):** Engineered the token migration process for the **BC Fusion** (Beacon Chain & BSC merger). Ensured secure asset bridging and zero-downtime data migration during the network merger.
 
 * **Multi-Client Development:**
   1. Maintained **[bsc (Geth)](https://github.com/bnb-chain/bsc)** (Go) and developed **[reth-bsc](https://github.com/bnb-chain/reth-bsc-trail)** (Rust) for BSC and opBNB layers.
