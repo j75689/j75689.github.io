@@ -35,12 +35,12 @@ Over 8 years of software engineering experience specializing in Blockchain Core 
 > **Key Impact:** Contributed to the core protocol of one of the world's most active blockchains, ensuring the security and scalability of billions in assets.
 
 * **Core Protocol & Hardforks:**
-  1. **[BEP-131](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP131.md):** Implemented candidate validator mechanisms to enhance network decentralization.
+  1. **[BEP-131](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP131.md) (Hardfork Upgrade):** Implemented candidate validator mechanisms in Go (Geth), successfully broadening the validator pool and strengthening network decentralization without compromising backward compatibility.
   2. **[BEP-299](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-299.md) and [BEP-333](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP333.md):** Engineered the token migration process for the **BC Fusion** (Beacon Chain & BSC merger). Ensured secure asset bridging and zero-downtime data migration during the network merger.
 
 * **Multi-Client Development:**
   1. Maintained **[bsc (Geth)](https://github.com/bnb-chain/bsc)** (Go) and developed **[reth-bsc](https://github.com/bnb-chain/reth-bsc-trail)** (Rust) for BSC and opBNB layers.
-  2. **opBNB Node Performance Optimization:** Optimized execution and consensus clients for **[opBNB (op-geth)](https://github.com/bnb-chain/op-geth)** to sustain stable and high throughput under ultra-fast block times, adapting performance-tuning methodologies from BSC protocol engineering.
+  2. **opBNB Node Performance Tuning:** Optimized execution and consensus clients for **[opBNB (op-geth)](https://github.com/bnb-chain/op-geth)** to sustain stable, high-throughput block propagation under sub-second block times, applying advanced memory and CPU profiling methodologies.
   3. **zkBNB Core Infrastructure & SMT (Sparse Merkle Tree):** Engineered **[zkbnb-smt](https://github.com/bnb-chain/zkbnb-smt)**, the core Sparse Merkle Tree (SMT) state tree structure and its optimized storage layer for zkBNB, ensuring high-performance cryptographic state-roots verification.
 
 * **Greenfield (blockchain-based decentralized storage network):**
@@ -48,12 +48,12 @@ Over 8 years of software engineering experience specializing in Blockchain Core 
   2. Successfully launched Greenfield from Testnet to Mainnet.
 
 * **Infrastructure:**
-  1. **RPC Plant (High-Availability Client Decoupling):** Refactored the core **bsc (Geth)** client to stream runtime state changes (DiffLayer) into Redis, successfully decoupling heavy RPC read traffic from execution nodes to achieve seamless horizontal scaling and high availability.
+  1. **High-Availability RPC Plant:** Refactored the core **bsc** (Geth) client to asynchronously stream memory state changes (DiffLayer) into Redis. Successfully decoupled heavy RPC read traffic from core execution nodes, resulting in a significant drop in node CPU overhead and enabling horizontal scalability.
 
 ### 💳 Silkrode Technologies | Golang Engineer
 *April 2020 – May 2021 | Taipei, Taiwan*
 
-1. **Payment Gateway:** Built a universal high-availability financial payment API using Go-kit/Microservices and the **Orchestration Saga Pattern** with Go & Redis & Message Queue, handling high-concurrency transactions securely.
+1. **Distributed Payment Gateway:** Engineered a high-availability financial payment API using `go-kit` microservices and the **Orchestration Saga Pattern** with Redis and message queues, ensuring transactional atomicity and data consistency across concurrent distributed flows.
 2. **Crypto Exchange:** Developed high-throughput user log and content services using **gRPC & Kafka**.
 3. **Performance:** Optimized K-line data analysis and conducted end-to-end stress tests via **Vegeta**.
 
