@@ -43,8 +43,8 @@ Over 8 years of software engineering experience specializing in Blockchain Core 
   2. **opBNB Node Performance Optimization:** Optimized execution and consensus clients for **[opBNB (op-geth)](https://github.com/bnb-chain/op-geth)** to sustain stable and high throughput under ultra-fast block times, adapting performance-tuning methodologies from BSC protocol engineering.
   3. **zkBNB Core Infrastructure & SMT (Sparse Merkle Tree):** Engineered **[zkbnb-smt](https://github.com/bnb-chain/zkbnb-smt)**, the core Sparse Merkle Tree (SMT) state tree structure and its optimized storage layer for zkBNB, ensuring high-performance cryptographic state-roots verification.
 
-* **Greenfield (Storage Layer):**
-  1. Core developer for the **[Greenfield](https://github.com/bnb-chain/greenfield)** storage protocol using **[Cosmos-SDK](https://github.com/bnb-chain/greenfield-cosmos-sdk)** and **[cometbft](https://github.com/bnb-chain/greenfield-cometbft)**.
+* **Greenfield (blockchain-based decentralized storage network):**
+  1. Core developer for the **[Greenfield](https://github.com/bnb-chain/greenfield)** blockchain protocol using **[Cosmos-SDK](https://github.com/bnb-chain/greenfield-cosmos-sdk)** and **[cometbft](https://github.com/bnb-chain/greenfield-cometbft)**.
   2. Successfully launched Greenfield from Testnet to Mainnet.
 
 * **Infrastructure:**
