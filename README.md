@@ -21,7 +21,7 @@ Over 8 years of software engineering experience specializing in Blockchain Core 
 | :--- | :--- |
 | **Languages** | **Golang (Expert)**, Rust, JavaScript, SQL, Shell |
 | **Blockchain** | **BNB Smart Chain (BSC)**, **EVM**, **Cosmos-SDK**, CometBFT, Reth/Geth |
-| **Backend** | Microservices, go-kit, gRPC, GraphQL, Saga Pattern, Kafka, MySQL, Redis |
+| **Backend** | Microservices, go-kit, gRPC, API, Saga Pattern, Kafka, MySQL, Redis |
 | **Infrastructure** | AWS (ECS, Aurora, CloudHSM), **Kubernetes (GKE)**, Terraform, Docker, CI/CD, ArgoCD, GitHub Action |
 | **Observability** | Prometheus, Grafana, EFK Stack |
 
