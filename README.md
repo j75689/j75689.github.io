@@ -43,12 +43,18 @@ Over 8 years of software engineering experience specializing in Blockchain Core 
   2. **opBNB Node Performance Tuning:** Optimized execution and consensus clients for **[opBNB (op-geth)](https://github.com/bnb-chain/op-geth)** to sustain stable, high-throughput block propagation under sub-second block times, applying advanced memory and CPU profiling methodologies.
   3. **zkBNB Core Infrastructure & SMT (Sparse Merkle Tree):** Engineered **[zkbnb-smt](https://github.com/bnb-chain/zkbnb-smt)**, the core Sparse Merkle Tree (SMT) state tree structure and its optimized storage layer for zkBNB, ensuring high-performance cryptographic state-roots verification.
 
-* **Greenfield (blockchain-based decentralized storage network):**
+* **Greenfield Ecosystem (Decentralized Storage Network):**
   1. Core developer for the **[Greenfield](https://github.com/bnb-chain/greenfield)** blockchain protocol using **[Cosmos-SDK](https://github.com/bnb-chain/greenfield-cosmos-sdk)** and **[cometbft](https://github.com/bnb-chain/greenfield-cometbft)**.
   2. Successfully launched Greenfield from Testnet to Mainnet.
 
 * **Infrastructure:**
-  1. **High-Availability RPC Plant:** Refactored the core **bsc** (Geth) client to asynchronously stream memory state changes (DiffLayer) into Redis. Successfully decoupled heavy RPC read traffic from core execution nodes, resulting in a significant drop in node CPU overhead and enabling horizontal scalability.
+  1. **High-Availability RPC Plant:** Refactored the core **bsc** (Geth) client to asynchronously stream memory state changes (`diffLayer`) into Redis. Successfully decoupled heavy RPC read traffic from core execution nodes, resulting in a significant drop in node CPU overhead and enabling horizontal scalability.
+  2. **Fast-Node Framework & State Optimizations:** Co-developed the fast-node verification framework ([BSC#926](https://github.com/bnb-chain/bsc/pull/926)), and resolved elusive **State Root Mismatch** bugs caused by concurrent state transitions within the `diffLayer` during optimistic verification, ensuring 100% database consistency under high load.
+
+* **Release & Reliability Engineering (BSC, Reth & Greenfield):**
+  1. **Mainnet Release & Testing Pipeline:** Led and managed the end-to-end release engineering lifecycles for **bsc**, **reth-bsc**, and **Greenfield** clients. Spearheaded pre-release shadow syncing, multi-node regression tests, and full-scale network migration dry-runs to ensure zero downtime.
+  2. **Stress Testing & Observability:** Conducted intensive performance profiling and load testing (stress tests) under simulated peak transaction volumes. Designed and optimized production monitoring frameworks using Prometheus and Grafana, establishing critical alerting thresholds for early bottleneck detection.
+  3. **Feature Guarding & CI/CD:** Collaborated closely with cross-functional teams to validate new protocol features, managing integration testing environments to prevent regressions prior to mainnet upgrades.
 
 ### 💳 Silkrode Technologies | Golang Engineer
 *April 2020 – May 2021 | Taipei, Taiwan*
