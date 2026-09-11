@@ -29,6 +29,13 @@ Over 8 years of software engineering experience specializing in Blockchain Core 
 
 ## 💼 Work Experience
 
+### 🤖 Independent | Senior Systems Engineer (Dataflow & Automation)
+*June 2025 – Present*
+
+- **Autonomous Intelligence Pipeline:** Engineered an end-to-end dataflow that crawls, filters, and ingests live web news into cloud NoSQL document stores, transforming high-volume unstructured streams into structured, queryable intelligence.
+- **Zero-Ops Serverless Architecture:** Designed a self-healing, cost-optimized pipeline featuring automated scheduling, exponential backoff retries, and asynchronous payload processing with zero server maintenance overhead.
+- **AI-Augmented Synthesis & Agent Workflows:** Integrated frontier LLM APIs to automate multi-source document distillation; built developer automation workflows using AI coding agents (Codex, CLI agents) to dramatically accelerate feature iteration.
+
 ### 🟡 [BNB Chain](https://github.com/bnb-chain) | Senior Blockchain Developer
 *June 2021 – May 2025 | Global Remote*
 
