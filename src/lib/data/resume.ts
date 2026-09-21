@@ -23,7 +23,7 @@ export const resume: Resume = {
 		},
 		{
 			name: 'Blockchain & Protocol',
-			tags: ['BNB Smart Chain (BSC)', 'EVM', 'Cosmos-SDK', 'CometBFT', 'Reth', 'Geth']
+			tags: ['BNB Smart Chain (BSC)', 'EVM', 'opBNB', 'Cosmos-SDK', 'CometBFT', 'Reth', 'Geth']
 		},
 		{
 			name: 'Backend & Systems',
@@ -50,23 +50,23 @@ export const resume: Resume = {
 			title: 'BNB Smart Chain (BSC Core)',
 			role: 'Core Contributor',
 			description:
-				'Implemented BEP-131 validator pool changes, supported BC Fusion migration work, and helped scale RPC architecture through asynchronous diffLayer streaming to Redis.',
+				'Hardfork work (BEP-131, BC Fusion), HA RPC via async diffLayer→Redis streaming, and fast-node verification (BSC#926) with state-root consistency under high load.',
 			url: 'https://github.com/bnb-chain/bsc',
-			tags: ['Golang', 'EVM', 'Geth', 'Protocol', ]
+			tags: ['Golang', 'EVM', 'Geth', 'Redis', 'Protocol']
 		},
 		{
 			title: 'reth-bsc',
 			role: 'Core Contributor',
 			description:
-				'Developed and tuned the Rust-based BSC execution client for BSC and opBNB workloads, focusing on stable high-throughput propagation under sub-second block times.',
+				'Rust BSC execution client for BSC and opBNB; performance tuning for stable, high-throughput block propagation under sub-second block times.',
 			url: 'https://github.com/bnb-chain/reth-bsc-trail',
-			tags: ['Rust', 'Reth', 'Performance']
+			tags: ['Rust', 'Reth', 'opBNB', 'Performance']
 		},
 		{
 			title: 'zkBNB-SMT',
 			role: 'Core Developer',
 			description:
-				'Engineered the Sparse Merkle Tree state structure and optimized storage layer used for zkBNB state-root verification workloads.',
+				'Core Sparse Merkle Tree state structure and optimized storage layer for zkBNB cryptographic state-root verification.',
 			url: 'https://github.com/bnb-chain/zkbnb-smt',
 			tags: ['Golang', 'Sparse Merkle Tree', 'Storage']
 		},
@@ -74,28 +74,25 @@ export const resume: Resume = {
 			title: 'Greenfield',
 			role: 'Core Protocol Developer',
 			description:
-				'Built core blockchain protocol functionality on Cosmos-SDK and CometBFT and supported the launch from testnet to mainnet.',
+				'Decentralized storage chain protocol on Cosmos-SDK and CometBFT; contributed through testnet and mainnet launch.',
 			url: 'https://github.com/bnb-chain/greenfield',
 			tags: ['Cosmos-SDK', 'CometBFT', 'Golang', 'Distributed Storage']
+		},
+		{
+			title: 'opBNB (op-geth)',
+			role: 'Performance / Client Tuning',
+			description:
+				'Optimized opBNB execution and consensus clients for sub-second block times with memory and CPU profiling under high throughput.',
+			url: 'https://github.com/bnb-chain/op-geth',
+			tags: ['Golang', 'opBNB', 'op-geth', 'Performance']
 		},
 		{
 			title: 'Tmaster',
 			role: 'Core Developer',
 			url: 'https://github.com/j75689/Tmaster',
 			description:
-				'Saga Pattern Orchestrator inspired by AWS Step Functions, designed specifically for complex serverless applications and distributed architectures.',
-			tags: [
-				'Golang',
-				'go-kit',
-				'Docker',
-				'K8s',
-				'Redis',
-				'SQL',
-				'Payments',
-				'Microservices',
-				'Event Driven',
-				'Message Queue(Nats, Google Pub/Sub)'
-			]
+				'Saga Pattern Orchestrator inspired by AWS Step Functions, designed for complex serverless applications and distributed architectures.',
+			tags: ['Golang', 'Saga', 'Microservices', 'Redis', 'Event Driven']
 		},
 		{
 			title: 'GopherScraper',
@@ -130,20 +127,22 @@ export const resume: Resume = {
 			dates: 'June 2021 – May 2025',
 			location: 'Global Remote',
 			highlights: [
-				'Delivered protocol upgrades including BEP-131 and BC Fusion migration work.',
-				'Maintained Go and Rust execution clients across BSC, opBNB, and related systems.',
-				'Led release, testing, and observability work for mainnet reliability.'
+				'Core protocol contributor on one of the world’s most active chains—hardforks, multi-client clients, and mainnet reliability.',
+				'Shipped BEP-131 candidate validators and BC Fusion token migration (BEP-299 / BEP-333) with zero-downtime constraints.',
+				'Built HA RPC (diffLayer→Redis), fast-node verification (BSC#926), and led release/stress/observability for bsc, reth-bsc, and Greenfield.'
 			],
 			details: [
-				'Implemented BEP-131 candidate validator mechanisms in Go to broaden the validator pool while preserving backward compatibility.',
-				'Engineered the token migration path for BC Fusion through BEP-299 and BEP-333 to support secure asset movement and zero-downtime data migration.',
-				'Maintained the bsc Geth client in Go and developed reth-bsc in Rust for BSC and opBNB layers.',
-				'Optimized opBNB execution and consensus clients for stable high-throughput block propagation under sub-second block times using memory and CPU profiling.',
-				'Engineered zkbnb-smt and its optimized storage layer for high-performance Sparse Merkle Tree state-root verification.',
-				'Worked as a core developer for Greenfield on Cosmos-SDK and CometBFT and supported the launch from testnet to mainnet.',
-				'Refactored the bsc client to asynchronously stream diffLayer memory state changes into Redis so heavy RPC reads were decoupled from core execution nodes.',
-				'Co-developed the fast-node verification framework and resolved state root mismatch bugs caused by concurrent diffLayer transitions during optimistic verification.',
-				'Led release engineering for bsc, reth-bsc, and Greenfield with shadow syncing, regression tests, migration dry-runs, stress testing, and production monitoring design.'
+				'Implemented BEP-131 candidate validator mechanisms in Go (Geth), broadening the validator pool and strengthening decentralization without breaking backward compatibility.',
+				'Engineered BC Fusion token migration for BEP-299 and BEP-333 (Beacon Chain & BSC merger), including secure asset bridging and zero-downtime data migration.',
+				'Maintained bsc (Geth) and developed reth-bsc (Rust) for BSC and opBNB layers.',
+				'Optimized opBNB (op-geth) execution and consensus clients for stable high-throughput block propagation under sub-second block times via memory and CPU profiling.',
+				'Engineered zkbnb-smt—the Sparse Merkle Tree state structure and optimized storage layer for zkBNB cryptographic state-root verification.',
+				'Core developer for Greenfield on Cosmos-SDK and CometBFT; supported Testnet to Mainnet launch.',
+				'Refactored bsc to asynchronously stream diffLayer memory state changes into Redis, decoupling heavy RPC reads from execution nodes and enabling horizontal RPC scale-out.',
+				'Co-developed the fast-node verification framework (BSC#926) and fixed State Root Mismatch bugs from concurrent diffLayer transitions during optimistic verification.',
+				'Led end-to-end release engineering for bsc, reth-bsc, and Greenfield: shadow syncing, multi-node regression, and full-scale migration dry-runs for zero-downtime upgrades.',
+				'Ran peak-load stress tests and production monitoring with Prometheus/Grafana, including alerting thresholds for early bottleneck detection.',
+				'Owned feature guarding and integration test environments with cross-functional teams to prevent regressions before mainnet upgrades.'
 			]
 		},
 		{
@@ -198,7 +197,7 @@ export const resume: Resume = {
 	education: {
 		degree: 'B.S. in Information Management',
 		school: 'National Yunlin University of Science and Technology (NYUST)',
-		years: '2013 - 2017'
+		years: 'Sep 2013 – Jun 2017'
 	},
 	cta: {
 		heading: "Let's Connect",
