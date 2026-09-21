@@ -6,12 +6,14 @@
 
 	let { profile }: { profile: Profile } = $props();
 
-let accent = $derived(profile.titleAccent?.trim() ?? '');
-let accentIndex = $derived(accent ? profile.title.indexOf(accent) : -1);
-let hasAccent = $derived(accentIndex >= 0);
-let titleBefore = $derived(hasAccent ? profile.title.slice(0, accentIndex) : profile.title);
-let titleAccent = $derived(hasAccent ? profile.title.slice(accentIndex, accentIndex + accent.length) : '');
-let titleAfter = $derived(hasAccent ? profile.title.slice(accentIndex + accent.length) : '');
+	let accent = $derived(profile.titleAccent?.trim() ?? '');
+	let accentIndex = $derived(accent ? profile.title.indexOf(accent) : -1);
+	let hasAccent = $derived(accentIndex >= 0);
+	let titleBefore = $derived(hasAccent ? profile.title.slice(0, accentIndex) : profile.title);
+	let titleAccent = $derived(
+		hasAccent ? profile.title.slice(accentIndex, accentIndex + accent.length) : ''
+	);
+	let titleAfter = $derived(hasAccent ? profile.title.slice(accentIndex + accent.length) : '');
 </script>
 
 <section class="glass px-6 py-8 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] sm:px-8 sm:py-10">
