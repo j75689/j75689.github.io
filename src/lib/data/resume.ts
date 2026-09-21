@@ -92,7 +92,7 @@ export const resume: Resume = {
 			company: 'Independent',
 			title: 'Senior Systems Engineer (Dataflow & Automation)',
 			dates: 'June 2025 – Present',
-			location: 'Remote',
+			location: 'Global Remote',
 			highlights: [
 				'Built an autonomous intelligence pipeline for live web news ingestion.',
 				'Designed a zero-ops serverless architecture with retries and async processing.',
