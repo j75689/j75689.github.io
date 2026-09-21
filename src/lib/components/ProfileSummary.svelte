@@ -8,7 +8,7 @@
 	</p>
 
 	<div class="glass p-6 sm:p-7">
-		<p class="max-w-3xl text-base leading-8 text-[var(--color-muted)] sm:text-lg">
+		<p class="text-base leading-8 text-[var(--color-muted)] sm:text-lg">
 			{summary}
 		</p>
 	</div>
