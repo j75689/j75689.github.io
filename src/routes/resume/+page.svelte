@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resume } from '$lib/data/resume';
+	import HighlightedText from '$lib/components/HighlightedText.svelte';
 
 	const getDetails = (details: string[], highlights: string[]) =>
 		details.length > 0 ? details : highlights;
@@ -138,7 +139,7 @@
 
 						<ul class="list-disc space-y-1 pl-5 text-sm leading-6 text-slate-800">
 							{#each getDetails(role.details, role.highlights) as item}
-								<li>{item}</li>
+								<li><HighlightedText text={item} tone="print" /></li>
 							{/each}
 						</ul>
 					</article>

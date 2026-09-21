@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { Experience } from '$lib/data/types';
 
+	import HighlightedText from './HighlightedText.svelte';
+
 	let { experience }: { experience: Experience[] } = $props();
 
 	let expanded = $state<number[]>([]);
@@ -39,7 +41,7 @@
 								<p class="text-base text-[var(--color-muted)]">
 									{#if item.companyUrl}
 										<a
-											class="transition hover:text-[var(--color-accent)] hover:underline"
+											class="font-medium text-[var(--color-accent)] transition hover:underline"
 											href={item.companyUrl}
 											target="_blank"
 											rel="noreferrer"
@@ -47,7 +49,7 @@
 											{item.company}
 										</a>
 									{:else}
-										{item.company}
+										<span class="font-medium text-[var(--color-text)]">{item.company}</span>
 									{/if}
 								</p>
 							</div>
@@ -61,8 +63,8 @@
 						<ul class="space-y-2 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
 							{#each isExpanded(index) ? item.details : item.highlights as bullet}
 								<li class="flex gap-3">
-									<span class="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--color-accent)]"></span>
-									<span>{bullet}</span>
+									<span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+									<span><HighlightedText text={bullet} /></span>
 								</li>
 							{/each}
 						</ul>

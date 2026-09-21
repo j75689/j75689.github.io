@@ -16,8 +16,9 @@ describe('resume page', () => {
 		expect(body).toContain('Open for full-time remote roles');
 		expect(body).toContain('BNB Smart Chain (BSC Core)');
 		expect(body).toContain('github.com/bnb-chain/bsc');
-		expect(body).toContain('Led end-to-end release engineering for bsc, reth-bsc, and Greenfield');
+		expect(body).toContain('Led end-to-end release engineering for bsc');
 		expect(body).toContain('BSC#926');
+		expect(body).toContain('BEP-131');
 		expect(body).not.toContain('Email (Copy)');
 		expect(body).not.toContain('Expand');
 	});
