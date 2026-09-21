@@ -39,14 +39,24 @@ const DEFAULT_TERMS = [
 	'5x'
 ];
 
+/** Evidence links for protocol artifacts — display stays short (term text only). */
+export const TERM_LINKS: Record<string, string> = {
+	'BEP-131': 'https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP131.md',
+	'BEP-299': 'https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-299.md',
+	'BEP-333': 'https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP333.md',
+	'BSC#926': 'https://github.com/bnb-chain/bsc/pull/926'
+};
+
 export type TextSegment = {
 	text: string;
 	highlight: boolean;
+	href?: string;
 };
 
 export function highlightSegments(
 	input: string,
-	terms: string[] = DEFAULT_TERMS
+	terms: string[] = DEFAULT_TERMS,
+	links: Record<string, string> = TERM_LINKS
 ): TextSegment[] {
 	if (!input) return [];
 
@@ -63,10 +73,13 @@ export function highlightSegments(
 
 	return parts
 		.filter((part) => part.length > 0)
-		.map((part) => ({
-			text: part,
-			highlight: terms.some((term) => term === part)
-		}));
+		.map((part) => {
+			const highlight = terms.some((term) => term === part);
+			const href = links[part];
+			return href
+				? { text: part, highlight: true, href }
+				: { text: part, highlight };
+		});
 }
 
 function escapeRegExp(value: string): string {

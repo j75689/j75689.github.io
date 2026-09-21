@@ -14,7 +14,18 @@
 
 <span>
 	{#each segments as segment}
-		{#if segment.highlight}
+		{#if segment.href}
+			<a
+				href={segment.href}
+				target="_blank"
+				rel="noopener noreferrer"
+				class={tone === 'print'
+					? 'font-semibold text-slate-950 underline underline-offset-2'
+					: 'font-semibold text-[var(--color-accent)] underline decoration-[rgba(243,186,47,0.35)] underline-offset-2 transition hover:decoration-[var(--color-accent)]'}
+			>
+				{segment.text}
+			</a>
+		{:else if segment.highlight}
 			{#if tone === 'print'}
 				<strong class="font-semibold text-slate-950">{segment.text}</strong>
 			{:else}
