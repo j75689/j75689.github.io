@@ -48,3 +48,43 @@ body {
 	color: var(--color-accent);
 	border: 1px solid rgba(243, 186, 47, 0.2);
 }
+
+.resume-print a {
+	color: inherit;
+}
+
+@media print {
+	:root {
+		color-scheme: light;
+	}
+
+	html,
+	body {
+		background: white !important;
+		color: black !important;
+	}
+
+	.page {
+		padding: 0;
+	}
+
+	.resume-print .no-print {
+		display: none !important;
+	}
+
+	.resume-print {
+		background: white !important;
+		color: black !important;
+		padding: 0 !important;
+	}
+
+	.resume-print h2,
+	.resume-print h3 {
+		break-after: avoid;
+	}
+
+	.resume-print section,
+	.resume-print article {
+		break-inside: avoid;
+	}
+}
