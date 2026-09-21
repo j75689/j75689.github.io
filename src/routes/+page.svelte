@@ -1,11 +1,3 @@
-<svelte:head>
-	<title>Dylan Huang</title>
-	<meta
-		name="description"
-		content="Senior backend and distributed systems engineer portfolio."
-	/>
-</svelte:head>
-
 <section class="mx-auto flex min-h-screen max-w-[var(--max-width)] items-center px-6 py-24">
 	<div class="space-y-4">
 		<p class="text-sm font-medium uppercase tracking-[0.3em] text-[var(--color-accent)]">
