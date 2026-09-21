@@ -68,7 +68,7 @@ export const resume: Resume = {
 			description:
 				'Engineered the Sparse Merkle Tree state structure and optimized storage layer used for zkBNB state-root verification workloads.',
 			url: 'https://github.com/bnb-chain/zkbnb-smt',
-			tags: ['Golang', 'Sparse Merkle Tree', 'ZK', 'Storage']
+			tags: ['Golang', 'Sparse Merkle Tree', 'Storage']
 		},
 		{
 			title: 'Greenfield',
