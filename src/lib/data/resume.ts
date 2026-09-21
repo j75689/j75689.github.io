@@ -52,7 +52,7 @@ export const resume: Resume = {
 			description:
 				'Implemented BEP-131 validator pool changes, supported BC Fusion migration work, and helped scale RPC architecture through asynchronous diffLayer streaming to Redis.',
 			url: 'https://github.com/bnb-chain/bsc',
-			tags: ['Golang', 'EVM', 'Geth', 'Redis', 'Protocol']
+			tags: ['Golang', 'EVM', 'Geth', 'Protocol', ]
 		},
 		{
 			title: 'reth-bsc',
@@ -60,7 +60,7 @@ export const resume: Resume = {
 			description:
 				'Developed and tuned the Rust-based BSC execution client for BSC and opBNB workloads, focusing on stable high-throughput propagation under sub-second block times.',
 			url: 'https://github.com/bnb-chain/reth-bsc-trail',
-			tags: ['Rust', 'Reth', 'Execution Client', 'Performance']
+			tags: ['Rust', 'Reth', 'Performance']
 		},
 		{
 			title: 'zkBNB-SMT',
@@ -79,18 +79,12 @@ export const resume: Resume = {
 			tags: ['Cosmos-SDK', 'CometBFT', 'Golang', 'Distributed Storage']
 		},
 		{
-			title: 'Autonomous Intelligence Pipeline',
-			role: 'Independent / Architect',
+			title: 'Tmaster',
+			role: 'Core Developer',
+			url: 'https://github.com/j75689/Tmaster',
 			description:
-				'Built an end-to-end pipeline that crawls, filters, and ingests live web news into cloud NoSQL document stores, then uses LLM workflows for multi-source synthesis.',
-			tags: ['Golang', 'Serverless', 'NoSQL', 'Automation', 'LLM']
-		},
-		{
-			title: 'Distributed Payment & Saga',
-			role: 'Lead Backend Engineer',
-			description:
-				'Engineered a high-availability payment API with go-kit microservices, Redis, and message queues using the orchestration Saga pattern for atomic distributed flows.',
-			tags: ['Golang', 'go-kit', 'Saga Pattern', 'Redis', 'Payments']
+				'Saga Pattern Orchestrator inspired by AWS Step Functions, designed specifically for complex serverless applications and distributed architectures.',
+			tags: ['Golang', 'go-kit', 'Docker', 'K8s', 'Redis', 'SQL', 'Payments', 'Microservices', 'Event Driven', 'Message Queue(Nats, Google Pub/Sub)']
 		}
 	],
 	experience: [
