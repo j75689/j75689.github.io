@@ -87,6 +87,30 @@ export const resume: Resume = {
 			tags: ['Golang', 'opBNB', 'op-geth', 'Performance']
 		},
 		{
+			title: 'BNB Beacon Chain (node)',
+			role: 'Core Contributor',
+			description:
+				'Beacon Chain client built on Tendermint/Cosmos-style app logic—native assets, staking/governance, and cross-chain features that underpinned BC Fusion with BSC.',
+			url: 'https://github.com/bnb-chain/node',
+			tags: ['Golang', 'Tendermint', 'Beacon Chain', 'BEP-2', 'Protocol']
+		},
+		{
+			title: 'node-deploy',
+			role: 'Core Contributor',
+			description:
+				'BSC local/cluster deployment tooling for validator and full-node setups, genesis configuration, and sync/stress test environments used in protocol validation.',
+			url: 'https://github.com/bnb-chain/node-deploy',
+			tags: ['BSC', 'DevOps', 'Cluster', 'Genesis', 'Testing']
+		},
+		{
+			title: 'node-dump',
+			role: 'Core Contributor',
+			description:
+				'Beacon Chain state dump and Merkle proof tooling for BC Fusion—preserving account/asset access after Beacon Chain decommission via verifiable proofs.',
+			url: 'https://github.com/bnb-chain/node-dump',
+			tags: ['Golang', 'BC Fusion', 'Merkle Proof', 'Beacon Chain', 'Migration']
+		},
+		{
 			title: 'Tmaster',
 			role: 'Core Developer',
 			url: 'https://github.com/j75689/Tmaster',
