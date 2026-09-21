@@ -1,0 +1,108 @@
+# Dylan Huang 🚀
+**Senior Backend & Distributed Systems Engineer | Ex-BNB Chain Core Developer**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/02470b111)
+[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-lightgrey?style=flat-square&logo=github)](https://github.com/j75689)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat-square&logo=gmail)](mailto:j75689@gmail.com)
+
+📍 Based in Taipei, Taiwan | 🌍 Open to Global Remote  
+⚡ **Availability**: Open for Full-Time Remote / Part-Time Contracts / Senior Architect Roles (Relocation to Japan open for discussion)
+
+---
+
+## 👨‍💻 Profile Summary
+Over 8 years of software engineering experience specializing in Blockchain Core Protocols and High-Performance Distributed Systems. As a Core Contributor to BNB Chain, spearheaded critical consensus upgrades (Hardforks) and multi-client development in Go (Geth) and Rust (Reth). Currently active as an independent Technical Consultant, focusing on Web3 infrastructure optimization, cross-chain interoperability, and high-throughput backend architecture.
+
+---
+
+## 🛠 Technical Stack
+
+| Category | Skills |
+| :--- | :--- |
+| **Languages** | **Golang (Expert)**, Rust, JavaScript, SQL, Shell |
+| **Blockchain** | **BNB Smart Chain (BSC)**, **EVM**, **Cosmos-SDK**, CometBFT, Reth/Geth |
+| **Backend** | Microservices, go-kit, gRPC, API, Saga Pattern, Kafka, MySQL, Redis |
+| **Infrastructure** | AWS (ECS, Aurora, CloudHSM), **Kubernetes (GKE)**, Terraform, Docker, CI/CD, ArgoCD, GitHub Action |
+| **Observability** | Prometheus, Grafana, EFK Stack |
+
+---
+
+## 💼 Work Experience
+
+### 🤖 Independent | Senior Systems Engineer (Dataflow & Automation)
+*June 2025 – Present*
+
+- **Autonomous Intelligence Pipeline:** Engineered an end-to-end dataflow that crawls, filters, and ingests live web news into cloud NoSQL document stores, transforming high-volume unstructured streams into structured, queryable intelligence.
+- **Zero-Ops Serverless Architecture:** Designed a self-healing, cost-optimized pipeline featuring automated scheduling, exponential backoff retries, and asynchronous payload processing with zero server maintenance overhead.
+- **AI-Augmented Synthesis & Agent Workflows:** Integrated frontier LLM APIs to automate multi-source document distillation; built developer automation workflows using AI coding agents (Codex, CLI agents) to dramatically accelerate feature iteration.
+
+### 🟡 [BNB Chain](https://github.com/bnb-chain) | Senior Blockchain Developer
+*June 2021 – May 2025 | Global Remote*
+
+> **Key Impact:** Contributed to the core protocol of one of the world's most active blockchains, ensuring the security and scalability of billions in assets.
+
+* **Core Protocol & Hardforks:**
+  1. **[BEP-131](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP131.md) (Hardfork Upgrade):** Implemented candidate validator mechanisms in Go (Geth), successfully broadening the validator pool and strengthening network decentralization without compromising backward compatibility.
+  2. **[BEP-299](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-299.md) and [BEP-333](https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP333.md):** Engineered the token migration process for the **BC Fusion** (Beacon Chain & BSC merger). Ensured secure asset bridging and zero-downtime data migration during the network merger.
+
+* **Multi-Client Development:**
+  1. Maintained **[bsc (Geth)](https://github.com/bnb-chain/bsc)** (Go) and developed **[reth-bsc](https://github.com/bnb-chain/reth-bsc-trail)** (Rust) for BSC and opBNB layers.
+  2. **opBNB Node Performance Tuning:** Optimized execution and consensus clients for **[opBNB (op-geth)](https://github.com/bnb-chain/op-geth)** to sustain stable, high-throughput block propagation under sub-second block times, applying advanced memory and CPU profiling methodologies.
+  3. **zkBNB Core Infrastructure & SMT (Sparse Merkle Tree):** Engineered **[zkbnb-smt](https://github.com/bnb-chain/zkbnb-smt)**, the core Sparse Merkle Tree (SMT) state tree structure and its optimized storage layer for zkBNB, ensuring high-performance cryptographic state-roots verification.
+
+* **Greenfield Ecosystem (Decentralized Storage Network):**
+  1. Core developer for the **[Greenfield](https://github.com/bnb-chain/greenfield)** blockchain protocol using **[Cosmos-SDK](https://github.com/bnb-chain/greenfield-cosmos-sdk)** and **[cometbft](https://github.com/bnb-chain/greenfield-cometbft)**.
+  2. Successfully launched Greenfield from Testnet to Mainnet.
+
+* **Infrastructure:**
+  1. **High-Availability RPC Plant:** Refactored the core **bsc** (Geth) client to asynchronously stream memory state changes (`diffLayer`) into Redis. Successfully decoupled heavy RPC read traffic from core execution nodes, resulting in a significant drop in node CPU overhead and enabling horizontal scalability.
+  2. **Fast-Node Framework & State Optimizations:** Co-developed the fast-node verification framework ([BSC#926](https://github.com/bnb-chain/bsc/pull/926)), and resolved elusive **State Root Mismatch** bugs caused by concurrent state transitions within the `diffLayer` during optimistic verification, ensuring 100% database consistency under high load.
+
+* **Release & Reliability Engineering (BSC, Reth & Greenfield):**
+  1. **Mainnet Release & Testing Pipeline:** Led and managed the end-to-end release engineering lifecycles for **bsc**, **reth-bsc**, and **Greenfield** clients. Spearheaded pre-release shadow syncing, multi-node regression tests, and full-scale network migration dry-runs to ensure zero downtime.
+  2. **Stress Testing & Observability:** Conducted intensive performance profiling and load testing (stress tests) under simulated peak transaction volumes. Designed and optimized production monitoring frameworks using Prometheus and Grafana, establishing critical alerting thresholds for early bottleneck detection.
+  3. **Feature Guarding & CI/CD:** Collaborated closely with cross-functional teams to validate new protocol features, managing integration testing environments to prevent regressions prior to mainnet upgrades.
+
+### 💳 Silkrode Technologies | Golang Engineer
+*April 2020 – May 2021 | Taipei, Taiwan*
+
+1. **Distributed Payment Gateway:** Engineered a high-availability financial payment API using `go-kit` microservices and the **Orchestration Saga Pattern** with Redis and message queues, ensuring transactional atomicity and data consistency across concurrent distributed flows.
+2. **Crypto Exchange:** Developed high-throughput user log and content services using **gRPC & Kafka**.
+3. **Performance:** Optimized K-line data analysis and conducted end-to-end stress tests via **Vegeta**.
+
+### ☁️ Noodoe Inc. | DevOps Engineer
+*August 2019 – March 2020 | Taipei, Taiwan*
+
+1. **IaC:** Managed AWS infrastructure and Kafka clusters using **Terraform**.
+2. **ChatOps:** Developed a Slack-based operations tool using Go & React for secure DB management.
+3. **Monitoring:** Set up **Prometheus/Grafana** and **EFK** logging for K8s clusters.
+
+### 🏛 Hyweb | Software Engineer
+*August 2017 – July 2019 | Taipei, Taiwan*
+
+1. **Refactoring:** Transitioned a legacy Java Monolith to a **Microservices** architecture (Go, React, GraphQL).
+2. **Data Engineering:** Built a Go-based web crawler with **TF-IDF** text analysis algorithms.
+3. **Optimization:** Improved indexing performance by 5x using **RabbitMQ**.
+
+---
+
+## 🌟 Open Source & Contributions
+* **[bnb-chain/bsc](https://github.com/bnb-chain/bsc):** Core protocol maintenance and feature development.
+* **[bnb-chain/reth-bsc](https://github.com/bnb-chain/reth-bsc-trail):** Rust implementation of BSC protocol.
+* **[bnb-chain/greenfield](https://github.com/bnb-chain/greenfield):** Decentralized storage core.
+
+---
+
+## 🎓 Education
+* **B.S. in Information Management**  
+  National Yunlin University of Science and Technology (NYUST) | Sep 2013 - Jun 2017
+
+---
+
+## 📫 Let's Connect
+* **Email:** [j75689@gmail.com](mailto:j75689@gmail.com)
+* **LinkedIn:** [linkedin.com/in/02470b111](https://www.linkedin.com/in/02470b111)
+* **GitHub:** [@j75689](https://github.com/j75689)
+
+---
+<p align="center">Built with ❤️ and Golang expertise.</p>
