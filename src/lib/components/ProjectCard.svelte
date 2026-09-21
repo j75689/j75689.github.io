@@ -27,7 +27,7 @@
 >
 	<div class="border-b border-white/8">
 		{#if project.image}
-			<div class="aspect-[16/9] overflow-hidden bg-white/5">
+			<div class="aspect-[16/10] overflow-hidden bg-white/5">
 				<img
 					src={project.image}
 					alt={`${project.title} preview`}
@@ -35,66 +35,69 @@
 				/>
 			</div>
 		{:else if hostname}
-			<div class="flex aspect-[16/9] flex-col justify-between bg-gradient-to-br from-white/6 via-white/[0.04] to-transparent p-5">
-				<div class="flex items-start justify-between gap-3">
-					<div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">
+			<div
+				class="flex aspect-[16/10] flex-col justify-between bg-gradient-to-br from-white/6 via-white/[0.04] to-transparent p-3.5"
+			>
+				<div class="flex items-start justify-between gap-2">
+					<div
+						class="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[0.65rem] uppercase tracking-[0.18em] text-[var(--color-muted)]"
+					>
 						{#if showFavicon && faviconUrl}
 							<img
 								src={faviconUrl}
 								alt=""
-								class="h-4 w-4 rounded-sm"
+								class="h-3.5 w-3.5 rounded-sm"
 								onerror={handleFaviconError}
 							/>
 						{/if}
-						<span>{hostname}</span>
+						<span class="truncate">{hostname}</span>
 					</div>
 
 					<span
 						aria-hidden="true"
-						class="text-[var(--color-accent)] transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+						class="shrink-0 text-[var(--color-accent)] transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
 					>
-						<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-current" stroke-width="1.8">
+						<svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-current" stroke-width="1.8">
 							<path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
 							<path d="M9 7H17V15" stroke-linecap="round" stroke-linejoin="round" />
 						</svg>
 					</span>
 				</div>
 
-				<div class="space-y-2">
-					<p class="text-xs uppercase tracking-[0.24em] text-[var(--color-dim)]">External Link</p>
-					<p class="text-sm leading-7 text-[var(--color-muted)]">
-						Open the repository or project page in a new tab.
-					</p>
-				</div>
+				<p class="text-[0.65rem] uppercase tracking-[0.2em] text-[var(--color-dim)]">External Link</p>
 			</div>
 		{:else}
-			<div class="flex aspect-[16/9] items-end bg-gradient-to-br from-white/6 via-white/[0.04] to-transparent p-5">
-				<div class="space-y-2">
-					<p class="text-xs uppercase tracking-[0.24em] text-[var(--color-dim)]">Project Snapshot</p>
-					<p class="text-lg font-semibold text-[var(--color-text)]">{project.title}</p>
+			<div
+				class="flex aspect-[16/10] items-end bg-gradient-to-br from-white/6 via-white/[0.04] to-transparent p-3.5"
+			>
+				<div class="space-y-1">
+					<p class="text-[0.65rem] uppercase tracking-[0.2em] text-[var(--color-dim)]">
+						Project Snapshot
+					</p>
+					<p class="text-base font-semibold text-[var(--color-text)]">{project.title}</p>
 				</div>
 			</div>
 		{/if}
 	</div>
 
-	<div class="flex flex-1 flex-col gap-4 p-5">
-		<div class="space-y-3">
-			<div class="flex items-start justify-between gap-3">
-				<div class="space-y-1">
-					<h3 class="text-lg font-semibold leading-tight text-[var(--color-text)]">
+	<div class="flex flex-1 flex-col gap-3 p-4">
+		<div class="space-y-2">
+			<div class="flex items-start justify-between gap-2">
+				<div class="min-w-0 space-y-1">
+					<h3 class="text-base font-semibold leading-snug text-[var(--color-text)]">
 						{project.title}
 					</h3>
 					{#if project.role}
-						<p class="text-sm text-[var(--color-muted)]">{project.role}</p>
+						<p class="text-xs text-[var(--color-muted)]">{project.role}</p>
 					{/if}
 				</div>
 
 				{#if project.url}
 					<span
 						aria-hidden="true"
-						class="mt-0.5 text-[var(--color-accent)] transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+						class="mt-0.5 shrink-0 text-[var(--color-accent)] transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
 					>
-						<svg viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-current" stroke-width="1.8">
+						<svg viewBox="0 0 24 24" class="h-4 w-4 fill-none stroke-current" stroke-width="1.8">
 							<path d="M7 17L17 7" stroke-linecap="round" stroke-linejoin="round" />
 							<path d="M9 7H17V15" stroke-linecap="round" stroke-linejoin="round" />
 						</svg>
@@ -102,10 +105,12 @@
 				{/if}
 			</div>
 
-			<p class="text-sm leading-7 text-[var(--color-muted)]">{project.description}</p>
+			<p class="text-xs leading-6 text-[var(--color-muted)] sm:text-sm sm:leading-6">
+				{project.description}
+			</p>
 		</div>
 
-		<div class="mt-auto flex flex-wrap gap-2">
+		<div class="mt-auto flex flex-wrap gap-1.5">
 			{#each project.tags as tag}
 				<span class="tag">{tag}</span>
 			{/each}
