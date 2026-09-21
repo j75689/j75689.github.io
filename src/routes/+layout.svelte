@@ -7,6 +7,11 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Dylan Huang — Backend & Distributed Systems</title>
+	<meta
+		name="description"
+		content="Senior Backend & Distributed Systems Engineer | Ex-BNB Chain Core Developer"
+	/>
 </svelte:head>
 
 {@render children()}
