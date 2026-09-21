@@ -107,7 +107,7 @@
 
 		<div class="mt-auto flex flex-wrap gap-2">
 			{#each project.tags as tag}
-				<span class="tag">#{tag}</span>
+				<span class="tag">{tag}</span>
 			{/each}
 		</div>
 	</div>
