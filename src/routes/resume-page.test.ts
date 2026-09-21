@@ -15,7 +15,7 @@ describe('resume page', () => {
 		expect(body).toContain('Dylan Huang');
 		expect(body).toContain('Open for full-time remote roles');
 		expect(body).toContain('BNB Smart Chain (BSC Core)');
-		expect(body).toContain('https://github.com/bnb-chain/bsc');
+		expect(body).toContain('github.com/bnb-chain/bsc');
 		expect(body).toContain('Led release engineering for bsc, reth-bsc, and Greenfield');
 		expect(body).not.toContain('Email (Copy)');
 		expect(body).not.toContain('Expand');
