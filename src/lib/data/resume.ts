@@ -5,7 +5,7 @@ export const resume: Resume = {
 		name: 'Dylan Huang',
 		title: 'Senior Backend & Distributed Systems Engineer | Ex-BNB Chain Core Developer',
 		titleAccent: 'BNB Chain',
-		location: 'Taipei, Taiwan',
+		location: 'Global Remote / Taipei, Taiwan',
 		availability:
 			'Open for full-time remote roles, part-time contracts, and senior architect work; relocation to Japan is open for discussion.',
 		summary:
