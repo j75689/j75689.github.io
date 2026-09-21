@@ -84,7 +84,26 @@ export const resume: Resume = {
 			url: 'https://github.com/j75689/Tmaster',
 			description:
 				'Saga Pattern Orchestrator inspired by AWS Step Functions, designed specifically for complex serverless applications and distributed architectures.',
-			tags: ['Golang', 'go-kit', 'Docker', 'K8s', 'Redis', 'SQL', 'Payments', 'Microservices', 'Event Driven', 'Message Queue(Nats, Google Pub/Sub)']
+			tags: [
+				'Golang',
+				'go-kit',
+				'Docker',
+				'K8s',
+				'Redis',
+				'SQL',
+				'Payments',
+				'Microservices',
+				'Event Driven',
+				'Message Queue(Nats, Google Pub/Sub)'
+			]
+		},
+		{
+			title: 'GopherScraper',
+			role: 'Author',
+			url: 'https://github.com/j75689/goscraper',
+			description:
+				'High-performance Go CLI crawler with YAML configuration-as-code. Extracts structured data from HTML, JSON, XML, and YAML via concurrent workers, rate limiting, and pluggable resolvers.',
+			tags: ['Golang', 'CLI', 'YAML', 'Crawler', 'HTML', 'JSON']
 		}
 	],
 	experience: [
