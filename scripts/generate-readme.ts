@@ -30,7 +30,18 @@ export function renderReadme(data: Resume): string {
 	const skillLines = skills
 		.map((skill) => `| **${skill.name}** | ${skill.tags.join(', ')} |`)
 		.join('\n');
-	const projectLines = projects.map(renderProject).join('\n');
+	const opensourceProjects = projects.filter((project) => project.category === 'opensource');
+	const selfProjects = projects.filter((project) => project.category === 'self');
+	const projectSections = [
+		selfProjects.length
+			? `### Self Project\n${selfProjects.map(renderProject).join('\n')}`
+			: '',
+		opensourceProjects.length
+			? `### Open Source Contribute\n${opensourceProjects.map(renderProject).join('\n')}`
+			: ''
+	]
+		.filter(Boolean)
+		.join('\n\n');
 	const experienceBlocks = experience.map(renderExperience).join('\n\n');
 
 	return `# ${profile.name}
@@ -59,7 +70,7 @@ ${skillLines}
 ---
 
 ## Featured Projects
-${projectLines}
+${projectSections}
 
 ---
 

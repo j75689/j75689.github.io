@@ -19,6 +19,8 @@ export type SkillCategory = {
 	tags: string[];
 };
 
+export type ProjectCategory = 'opensource' | 'self';
+
 export type Project = {
 	title: string;
 	role?: string;
@@ -26,6 +28,7 @@ export type Project = {
 	url?: string;
 	tags: string[];
 	image?: string;
+	category: ProjectCategory;
 };
 
 export type Experience = {

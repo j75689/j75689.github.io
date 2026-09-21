@@ -48,6 +48,7 @@ export const resume: Resume = {
 	projects: [
 		{
 			title: 'BNB Smart Chain (BSC Core)',
+			category: 'opensource',
 			role: 'Core Contributor',
 			description:
 				'Hardfork work (BEP-131, BC Fusion), HA RPC via async diffLayer→Redis streaming, and fast-node verification (BSC#926) with state-root consistency under high load.',
@@ -56,6 +57,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'reth-bsc',
+			category: 'opensource',
 			role: 'Core Contributor',
 			description:
 				'Rust BSC execution client for BSC and opBNB; performance tuning for stable, high-throughput block propagation under sub-second block times.',
@@ -64,6 +66,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'zkBNB-SMT',
+			category: 'opensource',
 			role: 'Core Developer',
 			description:
 				'Core Sparse Merkle Tree state structure and optimized storage layer for zkBNB cryptographic state-root verification.',
@@ -72,6 +75,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'Greenfield',
+			category: 'opensource',
 			role: 'Core Protocol Developer',
 			description:
 				'Decentralized storage chain protocol on Cosmos-SDK and CometBFT; contributed through testnet and mainnet launch.',
@@ -80,6 +84,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'opBNB (op-geth)',
+			category: 'opensource',
 			role: 'Performance / Client Tuning',
 			description:
 				'Optimized opBNB execution and consensus clients for sub-second block times with memory and CPU profiling under high throughput.',
@@ -88,6 +93,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'BNB Beacon Chain (node)',
+			category: 'opensource',
 			role: 'Core Contributor',
 			description:
 				'Beacon Chain client built on Tendermint/Cosmos-style app logic—native assets, staking/governance, and cross-chain features that underpinned BC Fusion with BSC.',
@@ -96,6 +102,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'node-deploy',
+			category: 'opensource',
 			role: 'Core Contributor',
 			description:
 				'BSC local/cluster deployment tooling for validator and full-node setups, genesis configuration, and sync/stress test environments used in protocol validation.',
@@ -104,6 +111,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'node-dump',
+			category: 'opensource',
 			role: 'Core Contributor',
 			description:
 				'Beacon Chain state dump and Merkle proof tooling for BC Fusion—preserving account/asset access after Beacon Chain decommission via verifiable proofs.',
@@ -112,6 +120,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'Tmaster',
+			category: 'self',
 			role: 'Core Developer',
 			url: 'https://github.com/j75689/Tmaster',
 			description:
@@ -120,6 +129,7 @@ export const resume: Resume = {
 		},
 		{
 			title: 'GopherScraper',
+			category: 'self',
 			role: 'Author',
 			url: 'https://github.com/j75689/goscraper',
 			description:

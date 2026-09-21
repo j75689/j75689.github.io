@@ -91,30 +91,41 @@
 			</div>
 		</section>
 
-		<section class="space-y-3">
+		<section class="space-y-4">
 			<h2 class="text-[0.7rem] font-semibold tracking-[0.28em] text-slate-500">PROJECTS</h2>
-			<div class="space-y-3">
-				{#each resume.projects as project}
-					<article class="space-y-1">
-						<div class="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-							<h3 class="text-sm font-semibold text-slate-900">{project.title}</h3>
-							{#if project.role}
-								<span class="text-sm text-slate-500">· {project.role}</span>
-							{/if}
-							{#if project.url}
-								<a
-									class="text-xs text-slate-500 underline-offset-2 hover:underline"
-									href={project.url}
-								>
-									{compactUrl(project.url)}
-								</a>
-							{/if}
+			{#each [
+				{ id: 'self' as const, label: 'Self Project' },
+				{ id: 'opensource' as const, label: 'Open Source Contribute' }
+			] as group}
+				{@const items = resume.projects.filter((project) => project.category === group.id)}
+				{#if items.length > 0}
+					<div class="space-y-2">
+						<h3 class="text-sm font-semibold text-slate-900">{group.label}</h3>
+						<div class="space-y-3">
+							{#each items as project}
+								<article class="space-y-1">
+									<div class="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+										<h4 class="text-sm font-semibold text-slate-900">{project.title}</h4>
+										{#if project.role}
+											<span class="text-sm text-slate-500">· {project.role}</span>
+										{/if}
+										{#if project.url}
+											<a
+												class="text-xs text-slate-500 underline-offset-2 hover:underline"
+												href={project.url}
+											>
+												{compactUrl(project.url)}
+											</a>
+										{/if}
+									</div>
+									<p class="text-sm leading-6 text-slate-700">{project.description}</p>
+									<p class="text-xs text-slate-500">{project.tags.join(' · ')}</p>
+								</article>
+							{/each}
 						</div>
-						<p class="text-sm leading-6 text-slate-700">{project.description}</p>
-						<p class="text-xs text-slate-500">{project.tags.join(' · ')}</p>
-					</article>
-				{/each}
-			</div>
+					</div>
+				{/if}
+			{/each}
 		</section>
 
 		<section class="space-y-4">
