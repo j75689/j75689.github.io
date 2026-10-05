@@ -8,11 +8,13 @@
 	const PREVIEW_COUNT = 3;
 
 	const groups: { id: ProjectCategory; label: string }[] = [
+		{ id: 'product', label: 'Product' },
 		{ id: 'self', label: 'Self Project' },
 		{ id: 'opensource', label: 'Open Source Contribute' }
 	];
 
 	let expandedGroups = $state<Record<ProjectCategory, boolean>>({
+		product: false,
 		opensource: false,
 		self: false
 	});

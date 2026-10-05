@@ -19,7 +19,7 @@ export type SkillCategory = {
 	tags: string[];
 };
 
-export type ProjectCategory = 'opensource' | 'self';
+export type ProjectCategory = 'product' | 'self' | 'opensource';
 
 export type Project = {
 	title: string;

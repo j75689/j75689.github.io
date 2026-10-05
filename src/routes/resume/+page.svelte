@@ -94,6 +94,7 @@
 		<section class="space-y-4">
 			<h2 class="text-[0.7rem] font-semibold tracking-[0.28em] text-slate-500">PROJECTS</h2>
 			{#each [
+				{ id: 'product' as const, label: 'Product' },
 				{ id: 'self' as const, label: 'Self Project' },
 				{ id: 'opensource' as const, label: 'Open Source Contribute' }
 			] as group}

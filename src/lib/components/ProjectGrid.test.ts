@@ -78,4 +78,29 @@ describe('ProjectGrid', () => {
 		expect(body).toContain('Image Project');
 		expect(body).not.toContain('Extra Open Source');
 	});
+
+	it('shows Product section before Self Project when product exists', () => {
+		const { body } = render(ProjectGrid, {
+			props: {
+				projects: [
+					{
+						title: 'GlossCue',
+						category: 'product',
+						description: 'AI dual subtitles app.',
+						url: 'https://glosscue.app',
+						tags: ['AI', 'App']
+					},
+					...projects
+				]
+			}
+		});
+
+		const productIndex = body.indexOf('Product');
+		const selfIndex = body.indexOf('Self Project');
+		expect(productIndex).toBeGreaterThan(-1);
+		expect(selfIndex).toBeGreaterThan(-1);
+		expect(productIndex).toBeLessThan(selfIndex);
+		expect(body).toContain('GlossCue');
+		expect(body).toContain('glosscue.app');
+	});
 });

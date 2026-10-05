@@ -47,6 +47,15 @@ export const resume: Resume = {
 	],
 	projects: [
 		{
+			title: 'GlossCue',
+			category: 'product',
+			role: 'Creator & Developer',
+			description:
+				'AI dual subtitles Chrome extension for Netflix, YouTube, Prime Video, and Disney+. Context-aware translation powered by Cloudflare Workers, D1, and Chrome MV3.',
+			url: 'https://glosscue.app',
+			tags: ['AI', 'Chrome Extension', 'Cloudflare Workers', 'D1', 'TypeScript', 'Astro']
+		},
+		{
 			title: 'BNB Smart Chain (BSC Core)',
 			category: 'opensource',
 			role: 'Core Contributor',

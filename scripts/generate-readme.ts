@@ -30,9 +30,13 @@ export function renderReadme(data: Resume): string {
 	const skillLines = skills
 		.map((skill) => `| **${skill.name}** | ${skill.tags.join(', ')} |`)
 		.join('\n');
-	const opensourceProjects = projects.filter((project) => project.category === 'opensource');
+	const productProjects = projects.filter((project) => project.category === 'product');
 	const selfProjects = projects.filter((project) => project.category === 'self');
+	const opensourceProjects = projects.filter((project) => project.category === 'opensource');
 	const projectSections = [
+		productProjects.length
+			? `### Product\n${productProjects.map(renderProject).join('\n')}`
+			: '',
 		selfProjects.length
 			? `### Self Project\n${selfProjects.map(renderProject).join('\n')}`
 			: '',
