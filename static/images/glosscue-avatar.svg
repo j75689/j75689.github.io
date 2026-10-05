@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#4b5eea"/>
+      <stop offset="1" stop-color="#2f40cc"/>
+    </radialGradient>
+    <linearGradient id="top" x1="0" x2="1">
+      <stop offset="0" stop-color="#c9d0ff"/>
+      <stop offset="1" stop-color="#9daaff"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#ff4d57"/>
+    </linearGradient>
+  </defs>
+  <!-- Full bleed: Instagram crops this square to a circle. -->
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <g transform="translate(540 540) scale(1.25) translate(-540 -540)">
+  <!-- Viewfinder corners, inside the circle's safe area. -->
+  <g fill="none" stroke="#ffffff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M318 448 V350 Q318 318 350 318 H448"/>
+    <path d="M762 632 V730 Q762 762 730 762 H632"/>
+  </g>
+  <!-- Dual subtitle lines. -->
+  <rect x="404" y="474" width="292" height="50" rx="25" fill="url(#top)"/>
+  <rect x="404" y="562" width="206" height="50" rx="25" fill="url(#bottom)"/>
+  </g>
+</svg>
