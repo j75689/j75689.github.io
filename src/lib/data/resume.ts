@@ -53,7 +53,7 @@ export const resume: Resume = {
 			description:
 				'AI dual subtitles Chrome extension for Netflix, YouTube, Prime Video, and Disney+. Context-aware translation powered by Cloudflare Workers, D1, and Chrome MV3.',
 			url: 'https://glosscue.app',
-			tags: ['AI', 'Chrome Extension', 'Cloudflare Workers', 'D1', 'TypeScript', 'Astro']
+			tags: ['AI', 'Chrome Extension', 'Cloudflare', 'GCP', 'Docker', 'TypeScript', 'Golang']
 		},
 		{
 			title: 'BNB Smart Chain (BSC Core)',
