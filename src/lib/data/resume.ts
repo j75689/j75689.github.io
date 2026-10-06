@@ -129,6 +129,15 @@ export const resume: Resume = {
 			tags: ['Golang', 'BC Fusion', 'Merkle Proof', 'Beacon Chain', 'Migration']
 		},
 		{
+			title: 'anyship',
+			category: 'self',
+			role: 'Author',
+			url: 'https://github.com/j75689/anyship',
+			description:
+				'Platform-neutral deployment CLI and MCP server. Describes applications once via deterministic YAML spec and deploys to Cloudflare Workers, VPS (Docker), Cloud Run, and AWS ECS.',
+			tags: ['Golang', 'CLI', 'DevOps', 'MCP', 'Cloudflare', 'Docker']
+		},
+		{
 			title: 'Tmaster',
 			category: 'self',
 			role: 'Core Developer',

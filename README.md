@@ -31,6 +31,7 @@ Over 8 years of software engineering experience specializing in blockchain core 
 - **[GlossCue](https://glosscue.app)** (Creator & Developer): AI dual subtitles Chrome extension for Netflix, YouTube, Prime Video, and Disney+. Context-aware translation powered by Cloudflare Workers, D1, and Chrome MV3.
 
 ### Self Project
+- **[anyship](https://github.com/j75689/anyship)** (Author): Platform-neutral deployment CLI and MCP server. Describes applications once via deterministic YAML spec and deploys to Cloudflare Workers, VPS (Docker), Cloud Run, and AWS ECS.
 - **[Tmaster](https://github.com/j75689/Tmaster)** (Core Developer): Saga Pattern Orchestrator inspired by AWS Step Functions, designed for complex serverless applications and distributed architectures.
 - **[GopherScraper](https://github.com/j75689/goscraper)** (Author): High-performance Go CLI crawler with YAML configuration-as-code. Extracts structured data from HTML, JSON, XML, and YAML via concurrent workers, rate limiting, and pluggable resolvers.
 
