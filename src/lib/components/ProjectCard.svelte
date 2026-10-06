@@ -27,11 +27,11 @@
 >
 	<div class="border-b border-white/8">
 		{#if project.image}
-			<div class="aspect-[16/10] overflow-hidden bg-white/5">
+			<div class="flex aspect-[16/10] items-center justify-center overflow-hidden bg-white/5">
 				<img
 					src={project.image}
 					alt={`${project.title} preview`}
-					class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+					class="h-full w-full {project.imageFit === 'contain' ? 'object-contain p-2' : 'object-cover'} transition duration-300 group-hover:scale-[1.02]"
 				/>
 			</div>
 		{:else if hostname}

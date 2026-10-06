@@ -28,6 +28,7 @@ export type Project = {
 	url?: string;
 	tags: string[];
 	image?: string;
+	imageFit?: 'cover' | 'contain';
 	category: ProjectCategory;
 };
 

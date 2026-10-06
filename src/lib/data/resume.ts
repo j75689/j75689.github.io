@@ -133,6 +133,8 @@ export const resume: Resume = {
 			category: 'self',
 			role: 'Author',
 			url: 'https://github.com/j75689/anyship',
+			image: '/images/anyship-banner.svg',
+			imageFit: 'contain',
 			description:
 				'Platform-neutral deployment CLI and MCP server. Describes applications once via deterministic YAML spec and deploys to Cloudflare Workers, VPS (Docker), Cloud Run, and AWS ECS.',
 			tags: ['Golang', 'CLI', 'DevOps', 'MCP', 'Cloudflare', 'Docker']
