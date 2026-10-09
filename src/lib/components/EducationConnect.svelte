@@ -49,6 +49,16 @@
 				>
 					{cta.secondaryLabel}
 				</a>
+				{#if links.blog}
+					<a
+						class="inline-flex items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm text-[var(--color-text)] transition hover:border-[rgba(243,186,47,0.35)] hover:text-[var(--color-accent)]"
+						href={links.blog}
+						target="_blank"
+						rel="noreferrer"
+					>
+						Read Blog ↗
+					</a>
+				{/if}
 			</div>
 		</div>
 	</div>

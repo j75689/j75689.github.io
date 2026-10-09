@@ -7,6 +7,7 @@ describe('resume data', () => {
 		expect(resume.profile.name).toBe('Dylan Huang');
 		expect(resume.profile.links.email).toContain('@');
 		expect(resume.profile.links.github).toMatch(/^https:\/\//);
+		expect(resume.profile.links.blog).toMatch(/^https:\/\//);
 	});
 
 	it('has four skill categories', () => {

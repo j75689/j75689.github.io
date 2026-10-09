@@ -26,6 +26,11 @@
 			text: compactUrl(resume.profile.links.linkedin)
 		},
 		{
+			label: 'Blog',
+			href: resume.profile.links.blog,
+			text: compactUrl(resume.profile.links.blog)
+		},
+		{
 			label: 'Email',
 			href: `mailto:${resume.profile.links.email}`,
 			text: resume.profile.links.email

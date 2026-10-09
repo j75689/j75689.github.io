@@ -16,7 +16,9 @@
 	<ExperienceTimeline experience={resume.experience} />
 	<EducationConnect education={resume.education} cta={resume.cta} links={resume.profile.links} />
 
-	<p class="pt-8 text-center text-sm text-[var(--color-dim)]">
+	<p class="flex items-center justify-center gap-3 pt-8 text-center text-sm text-[var(--color-dim)]">
+		<a class="underline transition hover:text-[var(--color-muted)]" href={resume.profile.links.blog} target="_blank" rel="noreferrer">Tech Blog ↗</a>
+		<span>·</span>
 		<a class="underline transition hover:text-[var(--color-muted)]" href="/resume">Printable resume</a>
 	</p>
 </main>

@@ -53,6 +53,7 @@ export function renderReadme(data: Resume): string {
 
 - GitHub: ${profile.links.github}
 - LinkedIn: ${profile.links.linkedin}
+- Blog: ${profile.links.blog}
 - Email: ${profile.links.email}
 
 ${profile.location}
@@ -96,6 +97,7 @@ ${cta.body}
 - Email: ${profile.links.email}
 - LinkedIn: ${profile.links.linkedin}
 - GitHub: ${profile.links.github}
+- Blog: ${profile.links.blog}
 
 ---
 

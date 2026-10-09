@@ -17,6 +17,7 @@ describe('home page', () => {
 		expect(body).toContain('National Yunlin University of Science and Technology');
 		expect(body).toContain('Printable resume');
 		expect(body).toContain('href="/resume"');
+		expect(body).toContain('https://j75689.github.io/blog');
 		expect(body).toContain('Email (Copy)');
 	});
 });

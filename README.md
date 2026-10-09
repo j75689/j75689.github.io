@@ -3,6 +3,7 @@
 
 - GitHub: https://github.com/j75689
 - LinkedIn: https://www.linkedin.com/in/02470b111
+- Blog: https://j75689.github.io/blog
 - Email: j75689@gmail.com
 
 Global Remote / Taipei, Taiwan
@@ -106,6 +107,7 @@ Discussing execution clients, distributed storage, or protocols.
 - Email: j75689@gmail.com
 - LinkedIn: https://www.linkedin.com/in/02470b111
 - GitHub: https://github.com/j75689
+- Blog: https://j75689.github.io/blog
 
 ---
 

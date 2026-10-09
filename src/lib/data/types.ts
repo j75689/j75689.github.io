@@ -2,6 +2,7 @@ export type ProfileLinks = {
 	github: string;
 	linkedin: string;
 	email: string;
+	blog: string;
 };
 
 export type Profile = {

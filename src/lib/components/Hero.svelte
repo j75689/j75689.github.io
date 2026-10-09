@@ -93,6 +93,20 @@
 					</svg>
 					LinkedIn
 				</a>
+				{#if profile.links.blog}
+					<a
+						class="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-[var(--color-text)] transition hover:border-[rgba(243,186,47,0.35)] hover:text-[var(--color-accent)]"
+						href={profile.links.blog}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<svg class="h-4 w-4 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+							<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+						</svg>
+						Blog
+					</a>
+				{/if}
 				<CopyEmailButton email={profile.links.email} />
 			</div>
 

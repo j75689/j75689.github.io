@@ -13,7 +13,8 @@ export const resume: Resume = {
 		links: {
 			github: 'https://github.com/j75689',
 			linkedin: 'https://www.linkedin.com/in/02470b111',
-			email: 'j75689@gmail.com'
+			email: 'j75689@gmail.com',
+			blog: 'https://j75689.github.io/blog'
 		}
 	},
 	skills: [
