@@ -166,7 +166,7 @@ export const resume: Resume = {
 			dates: 'June 2025 – Present',
 			location: 'Global Remote',
 			highlights: [
-				'Built an autonomous intelligence pipeline for live web news ingestion.',
+				'Building an agent management platform: multi-agent collaboration, tool calling, human-in-the-loop approvals, and scheduled pipelines.',
 				'Designed a zero-ops serverless architecture with retries and async processing.',
 				'Integrated LLM-driven document synthesis and developer automation workflows.'
 			],
