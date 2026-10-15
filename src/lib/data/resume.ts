@@ -199,7 +199,8 @@ export const resume: Resume = {
 				'Co-developed the fast-node verification framework (BSC#926) and fixed State Root Mismatch bugs from concurrent diffLayer transitions during optimistic verification.',
 				'Led end-to-end release engineering for bsc, reth-bsc, and Greenfield: shadow syncing, multi-node regression, and full-scale migration dry-runs for zero-downtime upgrades.',
 				'Ran peak-load stress tests and production monitoring with Prometheus/Grafana, including alerting thresholds for early bottleneck detection.',
-				'Owned feature guarding and integration test environments with cross-functional teams to prevent regressions before mainnet upgrades.'
+				'Owned feature guarding and integration test environments with cross-functional teams to prevent regressions before mainnet upgrades.',
+				'Deployed and operated the BNB Safe multisig environment until Safe official support took over.'
 			]
 		},
 		{
