@@ -53,9 +53,10 @@ Over 8 years of software engineering experience specializing in blockchain core 
 ### Independent | Senior Systems Engineer (Dataflow & Automation)
 *June 2025 – Present | Global Remote*
 
-- Engineered an end-to-end dataflow that crawls, filters, and ingests live web news into cloud NoSQL document stores for structured intelligence.
-- Designed a self-healing, cost-optimized serverless pipeline with automated scheduling, exponential backoff retries, and asynchronous payload processing.
-- Integrated frontier LLM APIs for multi-source document distillation and used AI coding agents to accelerate feature iteration.
+- Designed a low-cost, self-healing serverless architecture on GCP (Cloud Run, Firestore) and Cloudflare (Workers, R2) with scheduled jobs, exponential-backoff retries, and no servers to maintain.
+- Building an agent management platform (in development, not yet launched): multi-agent collaboration, tool calling, human-in-the-loop approvals, and scheduled pipelines.
+- Built CLI tooling that uses LLM APIs and coding agents (primarily Claude Code) to speed up documentation work and feature delivery.
+- Built anyship, a single-binary Go CLI (zero state files) that standardizes deployment across cloud platforms.
 
 ### [BNB Chain](https://github.com/bnb-chain) | Senior Blockchain Developer
 *June 2021 – May 2025 | Global Remote*
@@ -66,7 +67,7 @@ Over 8 years of software engineering experience specializing in blockchain core 
 - Optimized opBNB (op-geth) execution and consensus clients for stable high-throughput block propagation under sub-second block times via memory and CPU profiling.
 - Engineered zkbnb-smt—the Sparse Merkle Tree state structure and optimized storage layer for zkBNB cryptographic state-root verification.
 - Core developer for Greenfield on Cosmos-SDK and CometBFT; supported Testnet to Mainnet launch.
-- Refactored bsc to asynchronously stream diffLayer memory state changes into Redis, decoupling heavy RPC reads from execution nodes and enabling horizontal RPC scale-out.
+- Refactored bsc to asynchronously stream diffLayer memory state changes into Redis, decoupling heavy RPC reads from execution nodes and enabling horizontal RPC scale-out, ~500K QPS peak across 3 regions; cut each region from up to 80 to ~20 nodes.
 - Co-developed the fast-node verification framework (BSC#926) and fixed State Root Mismatch bugs from concurrent diffLayer transitions during optimistic verification.
 - Led end-to-end release engineering for bsc, reth-bsc, and Greenfield: shadow syncing, multi-node regression, and full-scale migration dry-runs for zero-downtime upgrades.
 - Ran peak-load stress tests and production monitoring with Prometheus/Grafana, including alerting thresholds for early bottleneck detection.
