@@ -32,6 +32,7 @@ Over 8 years of software engineering experience specializing in blockchain core 
 - **[GlossCue](https://glosscue.app)** (Creator & Developer): AI dual subtitles Chrome extension for Netflix, YouTube, Prime Video, and Disney+. Context-aware translation powered by Cloudflare Workers, D1, and Chrome MV3.
 
 ### Self Project
+- **[CueFlow](https://github.com/j75689/cueflow)** (Author): Open-source, self-hosted Agent Ops Console. Orchestrates teams of AI agents on a kanban board with tool approval gates, MCP/ACP runtime integration, and automated scheduling.
 - **[anyship](https://github.com/j75689/anyship)** (Author): Platform-neutral deployment CLI and MCP server. Describes applications once via deterministic YAML spec and deploys to Cloudflare Workers, VPS (Docker), Cloud Run, and AWS ECS.
 - **[Tmaster](https://github.com/j75689/Tmaster)** (Core Developer): Saga Pattern Orchestrator inspired by AWS Step Functions, designed for complex serverless applications and distributed architectures.
 - **[GopherScraper](https://github.com/j75689/goscraper)** (Author): High-performance Go CLI crawler with YAML configuration-as-code. Extracts structured data from HTML, JSON, XML, and YAML via concurrent workers, rate limiting, and pluggable resolvers.
@@ -55,7 +56,7 @@ Over 8 years of software engineering experience specializing in blockchain core 
 
 - Designed a low-cost, self-healing serverless architecture on GCP (Cloud Run, Firestore) and Cloudflare (Workers, R2) with scheduled jobs, exponential-backoff retries, and no servers to maintain.
 - Building an agent management platform (in development, not yet launched): multi-agent collaboration, tool calling, human-in-the-loop approvals, and scheduled pipelines.
-- Built CLI tooling that uses LLM APIs and coding agents (primarily Claude Code) to speed up documentation work and feature delivery.
+- Built CLI tooling and workflows that use LLM APIs and coding agents (primarily ClaudeCode) to distill technical documentation and speed up feature delivery.
 - Built anyship, a single-binary Go CLI (zero state files) that standardizes deployment across cloud platforms.
 
 ### [BNB Chain](https://github.com/bnb-chain) | Senior Blockchain Developer
@@ -72,7 +73,7 @@ Over 8 years of software engineering experience specializing in blockchain core 
 - Led end-to-end release engineering for bsc, reth-bsc, and Greenfield: shadow syncing, multi-node regression, and full-scale migration dry-runs for zero-downtime upgrades.
 - Ran peak-load stress tests and production monitoring with Prometheus/Grafana, including alerting thresholds for early bottleneck detection.
 - Owned feature guarding and integration test environments with cross-functional teams to prevent regressions before mainnet upgrades.
-- Deployed and operated the BNB Safe multisig environment until Safe's official support took over.
+- Deployed and operated the BNB Safe multisig environment until Safe official support took over.
 
 ### Silkrode Technologies | Golang Engineer
 *April 2020 – May 2021 | Taipei, Taiwan*
