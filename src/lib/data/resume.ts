@@ -134,6 +134,7 @@ export const resume: Resume = {
 			category: 'self',
 			role: 'Author',
 			url: 'https://github.com/j75689/cueflow',
+			image: '/images/cueflow-board.jpg',
 			description:
 				'Open-source, self-hosted Agent Ops Console. Orchestrates teams of AI agents on a kanban board with tool approval gates, MCP/ACP runtime integration, and automated scheduling.',
 			tags: ['Golang', 'Next.js', 'AI Agents', 'MCP', 'Docker', 'Cloud Run']
